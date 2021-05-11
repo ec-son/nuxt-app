@@ -1,0 +1,20 @@
+{
+  "name": "projet1",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.3",
+    "sass": "^1.32.12",
+    "sass-loader": "^11.0.1"
+  },
+  "devDependencies": {}
+}
