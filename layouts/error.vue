@@ -1,18 +1,17 @@
 <template>
   <div>
-    <h1 v-if="error.statusCode === 404">Page non trouvée</h1>
-    <h1 v-else>Une erreur est survenue</h1>
-    <NuxtLink to="/">Page d'accueil</NuxtLink>
+   <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong> Plz ! </strong> {{ error.message }} <nuxt-link to="/"> Retour </nuxt-link>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
   </div>
 </template>
 
 <script>
   export default {
     props: ['error'],
-    layout: 'error', // nous pouvons definir un layout personnalisé pour la page erreur
-    mounted() {
-        global.v = this.error
-        console.log(this.error);
-    },
+    layout: 'header'
   }
 </script>
